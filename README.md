@@ -8,7 +8,7 @@ The API used in this project is from Pixabay.
 
 ## Links
 
-- Live Site URL: [Netlify](https://image-search-app-tailwind.netlify.app/)
+- Live Site URL: [Netlify](https://react-app-tailwind-image-search.netlify.app/)
 
 ## Built with
 
