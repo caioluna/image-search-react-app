@@ -7,13 +7,13 @@ const ImageCard = ({ image }) => {
   const tags = image.tags.split(',')
 
   return (
-    <div className="max-w-sm rounded overflow-hidden shadow-lg my-4">
+    <div className="rounded max-w-sm overflow-hidden shadow-lg my-4 bg-white">
       <img src={image.webformatURL} alt="" className="w-full" />
-      <div className="flex-column px-6 py-4">
-        <div className="font-bold text-purple-500 text-xl mb-2 text-center">
-          Photo by <span className="text-purple-900">{image.user}</span>
+      <div className="px-6 py-4">
+        <div className="font-bold text-gray-500 text-xl mb-2 text-center">
+          Photo by <span className="text-gray-900">{image.user}</span>
         </div>
-        <ul className="flex justify-evenly">
+        <ul className="flex justify-evenly text-gray-500">
           <li>
             <strong>
               <VisibilityRoundedIcon />
@@ -35,7 +35,7 @@ const ImageCard = ({ image }) => {
       </div>
       <div className="px-6 py-4 text-center content-center">
         {tags.map((tag, index) => (
-          <span key={index} className="mt-2 inline-block bg-purple-200 rounded px-2 py-1 text-sm font-semibold text-purple-700 mr-2">#{tag.trim()}</span>
+          <span key={index} className="mt-2 inline-block bg-yellow-200 rounded px-2 py-1 text-sm font-semibold text-yellow-600 mr-2">#{tag.trim()}</span>
         ))}
       </div>
     </div>
